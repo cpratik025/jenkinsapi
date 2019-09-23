@@ -2,8 +2,12 @@
 How to create views
 """
 import logging
+import requests
+
 from pkg_resources import resource_string
 from jenkinsapi.jenkins import Jenkins
+from jenkinsapi.utils.requester import Requester
+requests.packages.urllib3.disable_warnings()
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
