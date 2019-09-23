@@ -24,9 +24,9 @@ jobs:
   - stage: release
     script: skip
     deploy:
-      user: lechat
+      user: pratik025
       password:
-        secure: Dn0M+smML+SzgHSVz8w05mkwkg1Eojp7WKvq8NiWSmqH7BlvTNjBszaYCEqIAdXY5vO9p9yx9mupoeLxXJLJlLer61OwHErrXKzUofLfgMJT/mF9WlUfJZgonJcyl5By/MU9vXIlFMAZNae393GJYhj4zQx8xoZXk8HWMMqNXLA=
+        secure: 11f57ce33dbf88046b3a18875d5d483b8a
       on:
         repo: pycontribs/jenkinsapi
         tags: true
