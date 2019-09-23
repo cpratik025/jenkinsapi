@@ -9,6 +9,12 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
 
 jenkins_url = "http://localhost:8080/"
+username = "pratik025"  # In case Jenkins requires authentication
+password = "YouGussed@025"
+
+jenkins = Jenkins(jenkins_url,
+                  requester=Requester(username, password,
+                                      baseurl=jenkins_url, ssl_verify=False))
 
 jenkins = Jenkins(jenkins_url, lazy=True)
 
